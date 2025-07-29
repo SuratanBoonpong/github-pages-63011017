@@ -1,0 +1,200 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chloe Chen - Junior Data Analyst</title>
+  <style>
+    :root {
+      --primary-color: #2a9d8f;
+      --secondary-color: #264653;
+      --background-color: #f4f4f4;
+      --text-color: #333;
+      --accent-color: #e76f51;
+      --font-sans: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      background: #fff;
+      padding: 2rem 3rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    header {
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--secondary-color);
+    }
+    header p.position {
+      margin: 0.25rem 0 0;
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+    .location {
+      font-size: 0.95rem;
+      color: #666;
+      margin-top: 0.2rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    section h2 {
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 1.25rem;
+    }
+    ul.skills-list,
+    ul.tech-list,
+    ul.soft-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+    }
+    ul.skills-list li,
+    ul.tech-list li,
+    ul.soft-list li {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    ul.skills-list li span.level {
+      font-weight: 400;
+      margin-left: 0.4rem;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+    .experience-item {
+      margin-bottom: 1.5rem;
+    }
+    .experience-item h3 {
+      margin: 0;
+      color: var(--secondary-color);
+      font-size: 1.2rem;
+    }
+    .experience-item .duration {
+      font-size: 0.9rem;
+      color: #666;
+      margin: 0.1rem 0 0.6rem;
+    }
+    .experience-item p {
+      margin: 0.2rem 0 0;
+    }
+    .education {
+      font-style: normal;
+    }
+    .education h3 {
+      margin: 0 0 0.3rem 0;
+      font-size: 1.1rem;
+      color: var(--secondary-color);
+    }
+    .education p {
+      margin: 0.1rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem 1.5rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>Chloe Chen</h1>
+      <p class="position">Junior Data Analyst at Retail Goods Corp.</p>
+      <p class="location">Austin, TX &mdash; Since July 2023</p>
+    </header>
+
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills & Technologies</h2>
+      <ul class="skills-list" aria-label="List of software skills">
+        <li>SQL <span class="level">(Advanced)</span></li>
+        <li>Microsoft Excel <span class="level">(Expert including Pivot Tables &amp; VLOOKUP)</span></li>
+        <li>Tableau <span class="level">(Proficient)</span></li>
+        <li>Power BI <span class="level">(Intermediate)</span></li>
+      </ul>
+      <ul class="tech-list" aria-label="Technologies and expertise">
+        <li>Microsoft SQL Server</li>
+        <li>PostgreSQL</li>
+        <li>BI Reporting</li>
+        <li>KPI Tracking</li>
+        <li>Dashboard Development</li>
+      </ul>
+      <ul class="soft-list" aria-label="Core expertise">
+        <li>Data Storytelling</li>
+        <li>Attention to Detail</li>
+        <li>Communication</li>
+        <li>Requirements Gathering</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <article class="experience-item">
+        <h3>Sales Performance Dashboard Development</h3>
+        <p>Developed sales performance dashboards and ad-hoc reports using SQL and Tableau to enable data-driven decision making.</p>
+      </article>
+      <article class="experience-item">
+        <h3>Marketing Campaign Analysis Dashboard</h3>
+        <p>Created a Marketing Campaign Analysis Dashboard tracking key metrics like open rate, click-through rate, and conversion rate.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="education">
+        <h3>Bachelor of Business Administration in Finance</h3>
+        <p>The University of Texas at Austin</p>
+        <p>Graduated May 2023</p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2024 Chloe Chen
+    </footer>
+  </div>
+</body>
+</html>
+```
